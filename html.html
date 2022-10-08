@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>raiara</title>
+    <style>
+        body {
+            background: black;
+        }
+        
+        .painelinicial {
+            width: 100%;
+            max-width: 1000px;
+            height: 800px;
+            background-color: #000000;
+            margin: auto;
+            box-shadow: 10px 10px 40px 10px red;
+        }
+        
+        .logo {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+        
+        .opcoes {
+            width: 100%;
+            max-width: 40px;
+            height: 40px;
+            background-color: crimson;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        .mais {
+            width: 100%;
+            max-width: 1000px;
+            height: 30px;
+        }
+        
+        .bottom {
+            width: 100%;
+            max-width: 30px;
+            height: 30px;
+            background-color: #666;
+        }
+        
+        .logofoto {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+        
+        .t {
+            width: 100%;
+            max-width: 40px;
+            height: 40px;
+        }
+        
+        .y {
+            width: 100%;
+            max-width: 40px;
+            display: none;
+            height: 40px;
+        }
+        
+        .painelopcoes {
+            width: 100%;
+            max-width: 450px;
+            height: 300px;
+            background-color: antiquewhite;
+            margin: auto;
+            display: none;
+        }
+        
+        .sumi2 {
+            width: 100%;
+            max-width: 40px;
+            height: 40px;
+            display: none;
+            display: absolute;
+        }
+        
+        .su2foto {
+            width: 100%;
+            max-width: 40px;
+            height: 40px;
+            display: absolute;
+        }
+        
+        .teste {
+            width: 100%;
+            max-width: 450px;
+            height: 300px;
+        }
+        
+        .textinho {
+            margin-left: 30px;
+        }
+        
+        .fotocorpo {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin: auto;
+            background-color: red;
+        }
+        
+        .lp {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            background-color: #88888888;
+            display: none;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lp"></div>
+    <div class="painelinicial">
+        <div class="mais">
+            <div class="bottom"><img src="./pes32.png" class="mais" onclick="lll(1)" /></div>
+        </div>
+
+        <div class="logo"><img src='./logo.jpg' class="logofoto" /></div>
+        <div class="opcoes"><img src="./primeiroX.png" class="t" onclick="sumi()" /></div>
+        <div class="painelopcoes">
+            <div class="sumi2"><img src="./incluirtudo.png" class="s2foto" onclick="ss()" /></div>
+            <br>
+            <br>
+            <div class="teste">
+                <div class="textinho">sssssss </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        function sumi() {
+            document.querySelector('.t').style.display = 'none'
+            document.querySelector('.opcoes').style.display = 'none'
+            document.querySelector('.painelopcoes').style.display = 'flex'
+            document.querySelector('.sumi2').style.display = 'flex'
+        }
+
+        function ss() {
+            document.querySelector('.t').style.display = 'flex';
+            document.querySelector('.opcoes').style.display = 'flex';
+            document.querySelector('.painelopcoes').style.display = 'none';
+            document.querySelector('.sumi2').style.display = 'none';
+        }
+
+        function lll(kk) {
+            if (kk == 1) {
+                document.querySelector('.lp').style.display = 'flex';
+            }
+        }
+    </script>
+    <div class="fotocorpo"><img src="./corpo.png" class="fotocorpo" /></div>
+</body>
+
+</html>
