@@ -136,7 +136,6 @@
             width: 100%;
             max-width: 200px;
             height: 200px;
-            background-color: #88888888;
             display: none;
             margin-left: 100px;
         }
@@ -166,6 +165,32 @@
             text-transform: none;
             color: red;
         }
+        
+        .gifdownload {
+            width: 100%;
+            max-width: 100px;
+            height: 100px;
+            background-color: bisque;
+            border-radius: 50px;
+            margin: auto;
+            display: none;
+        }
+        
+        .gifs {
+            width: 100%;
+            max-width: 100px;
+            height: 100px;
+            background-color: bisque;
+            border-radius: 50px;
+            margin: auto;
+        }
+        
+        .p {
+            width: 100%;
+            max-width: 100px;
+            height: 20px;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -173,11 +198,21 @@
 
     <div class="lp">
         <div class="s2foto"><img src="./incluirtudo.png" class="ss2f" onclick="ss2(10)" /></div>
+        <div class="pesqui">
+            <br>
+            <input type="text" placeholder="pes" class="p" />
+            <br>
+            <br>
+            <input type="button" value="buscar" class="bottomm" onclick="bo()" />
+            <br>
+            <div class="gifdownload"><img src="./img222.gif" class="gifs" /></div>
+        </div>
 
     </div>
     <div class="painelinicial">
         <div class="mais">
             <div class="bottom"><img src="./pes32.png" class="mais" onclick="lll(1)" /></div>
+
         </div>
 
         <div class="logo"><img src='./logo.jpg' class="logofoto" /></div>
@@ -232,12 +267,50 @@
 
 
     <script>
+        function bo() {
+            let pp = document.querySelector(".p").value
+            if (pp == "paulim") {
+                document.querySelector(".gifdownload").style.display = 'flex';
+                document.querySelector(".gifs").src = "./img222.gif";
+                setTimeout(function() {
+                    document.querySelector(".gifdownload").style.display = "none";
+                }, 2000)
+                setTimeout(function() {
+                    window.open("./")
+                }, 3000)
+            } else if (pp != "paulim" && pp != "paulo") {
+                document.querySelector(".gifdownload").style.display = 'flex';
+                setTimeout(function() {
+                    document.querySelector(".gifs").src = "./erro.jpeg";
+                }, 2000)
+                setTimeout(function() {
+                    document.querySelector(".gifdownload").style.display = "none";
+                }, 3000)
+
+            } else if (pp == "paulo") {
+                document.querySelector(".gifdownload").style.display = 'flex';
+                document.querySelector(".gifs").src = "./img222.gif";
+                setTimeout(function() {
+                    document.querySelector(".gifdownload").style.display = "none";
+                }, 2000)
+                setTimeout(function() {
+                    alert('OLA')
+                }, 3000)
+            }
+
+
+
+            //document.querySelector(".gifdownload").style.display = 'flex';
+
+        }
+
         function sumi() {
             document.querySelector('.t').style.display = 'none'
             document.querySelector('.opcoes').style.display = 'none'
             document.querySelector('.painelopcoes').style.display = 'flex'
-            document.querySelector('.sumi2').style.display = 'flex'
-            alert(" escolha e click nas opçoes !")
+            document.querySelector('.sumi2').style.display = 'flex';
+
+            alert(" Escolha e Click Nas Opçoes !")
         }
 
         function ss() {
